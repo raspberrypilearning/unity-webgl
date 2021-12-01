@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Base Project</title>
+    <title>Unity WebGL Player | Snow Quest</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,21 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Base Project</div>
+        <div id="unity-build-title">Snow Quest</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/SnowQuest.asm.loader.js";
+      var loaderUrl = buildUrl + "/SnowQuest.loader.js";
       var config = {
         dataUrl: buildUrl + "/SnowQuest.data",
-        frameworkUrl: buildUrl + "/SnowQuest.asm.framework.js",
-        codeUrl: buildUrl + "/SnowQuest.asm.js",
-        memoryUrl: buildUrl + "/SnowQuest.asm.mem",
+        frameworkUrl: buildUrl + "/SnowQuest.framework.js",
+        codeUrl: buildUrl + "/SnowQuest.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Base Project",
-        productVersion: "1.0",
+        productName: "Snow Quest",
+        productVersion: "0.1",
       };
 
       var container = document.querySelector("#unity-container");
