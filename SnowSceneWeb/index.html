@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Base Project</title>
+    <title>Unity WebGL Player | Snow Quest</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=710 height=444></canvas>
+      <canvas id="unity-canvas" width=710 height=450></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,21 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Base Project</div>
+        <div id="unity-build-title">Snow Quest</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/unity-webgl.asm.loader.js";
+      var loaderUrl = buildUrl + "/SnowSceneWeb.loader.js";
       var config = {
-        dataUrl: buildUrl + "/unity-webgl.data",
-        frameworkUrl: buildUrl + "/unity-webgl.asm.framework.js",
-        codeUrl: buildUrl + "/unity-webgl.asm.js",
-        memoryUrl: buildUrl + "/unity-webgl.asm.mem",
+        dataUrl: buildUrl + "/SnowSceneWeb.data",
+        frameworkUrl: buildUrl + "/SnowSceneWeb.framework.js",
+        codeUrl: buildUrl + "/SnowSceneWeb.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Base Project",
-        productVersion: "1.0",
+        productName: "Snow Quest",
+        productVersion: "0.1",
       };
 
       var container = document.querySelector("#unity-container");
@@ -64,7 +63,7 @@
         }, 5000);
       } else {
         canvas.style.width = "710px";
-        canvas.style.height = "444px";
+        canvas.style.height = "450px";
       }
       loadingBar.style.display = "block";
 
